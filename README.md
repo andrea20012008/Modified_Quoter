@@ -9,7 +9,7 @@ In this repository, we exhibit our main contributions and novel modifications, s
 
 # Files Hierarchy
 This GitHub repository is split into 2 major folders.
-1. The **quoter** folder contains all the files for the training and testing pipeline, as well as the dataset files in .txt format (which is in the data subfolder). There are 6 .ipynb files for the training pipeline, all of which contain the exact same structure. The major difference is simply loading the corresponding dataset. These files are listed in detail below.
+1. The **quoter** folder contains all the files for the training and testing pipeline. There are 6 .ipynb files for the training pipeline, all of which contain the exact same structure. The major difference is simply loading the corresponding dataset. These files are listed in detail below.
   - The English train/test pipeline for vanilla BERT
   - The English train/test pipeline for BERT-Sememe
   - The modern Chinese train/test pipeline for vanilla BERT
@@ -17,6 +17,7 @@ This GitHub repository is split into 2 major folders.
   - The ancient Chinese train/test pipeline for vanilla BERT
   - The ancient Chinese train/test pipeline for BERT-Sememe
 2. The **model** folder contains all the weights of our resulting experimental models. To use them, simply load the model weights using any of the pipeline files in the **quoter** folder, then run the test function at the very end of every pipeline.
+3. Unfortunately, the dataset is too large to be uploaded to GitHub, so we attach the Google Drive link for the datasets here: https://drive.google.com/drive/folders/1d6dvWHMcqyaJ3enFLBZPjMefOD96PzaX?usp=share_link
 
 
 # Novel Parts of the Repository
