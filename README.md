@@ -17,7 +17,8 @@ This GitHub repository is split into 2 major folders.
   - The ancient Chinese train/test pipeline for vanilla BERT
   - The ancient Chinese train/test pipeline for BERT-Sememe
 2. The **model** folder contains all the weights of our resulting experimental models. To use them, simply load the model weights using any of the pipeline files in the **quoter** folder, then run the test function at the very end of every pipeline.
-3. Unfortunately, the dataset is too large to be uploaded to GitHub, so we attach the Google Drive link for the datasets here: https://drive.google.com/drive/folders/1d6dvWHMcqyaJ3enFLBZPjMefOD96PzaX?usp=share_link
+  - There are 6 weights for each pipeline in the early stopping experiments, and 4 weights for the context generation experiments.
+4. Unfortunately, the dataset is too large to be uploaded to GitHub, so we attach the Google Drive link for the datasets here: https://drive.google.com/drive/folders/1d6dvWHMcqyaJ3enFLBZPjMefOD96PzaX?usp=share_link
 
 # Interchanging Vanilla BERT and BERT-Sememe
 You have to modify the transformers library directly in order to interchange between vanilla BERT and BERT-Sememe. In the transformers library, search for the __init__.py file and add the model BertSememeModel to the list of models to import in modeling_bert. Then, in the modeling_bert.py file, add all the contents of the modeling_bert_chinese.py file, if you are training for modern OR ancient Chinese. If you are training for English, add all the contents of the modeling_bert_english.py file. 
